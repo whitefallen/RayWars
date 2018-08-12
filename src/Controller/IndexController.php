@@ -8,6 +8,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class IndexController extends AbstractController {
 
+  public $__projectDir;
+
+  public function __construct($projectDir)
+  {
+      $this->__projectDir = $projectDir;
+  }
+
   /**
    * @Route("/", name="app_index")
    */

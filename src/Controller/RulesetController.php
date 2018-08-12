@@ -8,6 +8,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class RulesetController extends AbstractController {
 
+  public $__projectDir;
+
+  public function __construct($projectDir)
+  {
+      $this->__projectDir = $projectDir;
+  }
+
   /**
    * @Route("/ruleset", name="app_ruleset")
    */
