@@ -1,12 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+
+  <div class="container">
   <div class="py-5">
-    <div class="container">
       <div class="row">
         <div class="col-md-8 align-self-center">
-          <h3>{{ card.getName() }}</h3>
-          <p class="my-3">
+          <h3 style="padding:inherit;">{{ card.getName() }}</h3>
+          <p class="my-3" style="padding:inherit;">
             {% if card.getInfotext() %}
               {{ card.getInfotext() }}
             {% endif %}
@@ -16,10 +17,8 @@
           <img class="img-fluid d-block" src="/cards/image/card{{card.getId}}.png" style="height: 75%;">
         </div>
       </div>
-    </div>
   </div>
-  <div class="py-2" style="margin-top: -5em;">
-    <div class="container">
+  <div class="py-2" style="margin-top: -10em;">
       <div class="row">
         <div class="col-md-12">
         {# HORIZONTAL
