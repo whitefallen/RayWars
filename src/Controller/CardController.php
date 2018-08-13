@@ -11,9 +11,6 @@ use App\Entity\Card;
 
 class CardController extends AbstractController {
 
-  // TODO Add a Finder, thats Find a Json File , iterate through it, save attributes to Entity, and display it in twig Template
-
-
   public $__projectDir;
 
   public function __construct($projectDir)

@@ -1,7 +1,6 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-{% include 'nav.html.twig' %}
   {% for card in cards %}
     {% if card.getId() is odd %}
       <div class="py-5">
