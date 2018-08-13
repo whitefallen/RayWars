@@ -1,5 +1,10 @@
 {
   "id": 2,
   "name": "5CODE Chan",
-  "typ": "Main"
+  "typ": "Main",
+  "kosten": 1,
+  "hp": 2,
+  "kartentypen": ["STUDENT", "DUISBURG", "TCG-SPIELER"],
+  "effekte": "TRIGGERED: Wenn eine Doggo-Karte gespielt wird, bekommt diese Karte +1 Stärke.",
+  "infotext": "Das ist ein Test"
 }
