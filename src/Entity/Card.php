@@ -18,6 +18,8 @@ class Card
 
     private $effect;
 
+    private $infotext;
+
     public function getId()
     {
         return $this->id;
@@ -86,6 +88,16 @@ class Card
     public function setEffect($_effect)
     {
         $this->effect = $_effect;
+    }
+
+    public function getInfotext()
+    {
+        return $this->infotext;
+    }
+
+    public function setInfotext($_infotext)
+    {
+        $this->infotext = $_infotext;
     }
 
 }

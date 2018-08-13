@@ -7,12 +7,9 @@
         <div class="col-md-7 align-self-center">
           <h3>{{ card.getName() }}</h3>
           <p class="my-3">
-            INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT<br />
-            INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT<br />
-            INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT<br />
-            INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT<br />
-            INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT<br />
-            INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT INFOTEXT<br />
+            {% if card.getInfotext() %}
+              {{ card.getInfotext() }}
+            {% endif %}
           </p>
         </div>
         <div class="col-md-5">
@@ -65,32 +62,42 @@
                 <td>Name</td>
                 <td>{{ card.getName() }}</td>
               </tr>
-              <tr>
-                <td>Typ</td>
-                <td>{{ card.getType() }}</td>
-              </tr>
-              <tr>
-                <td>Kosten</td>
-                <td>{{ card.getCost() }}</td>
-              </tr>
-              <tr>
-                <td>HP</td>
-                <td>{{ card.getHp() }}</td>
-              </tr>
-              <tr>
-                <td>Karstentypen</td>
-                <td>
-                {% for cardtag in card.getCardtag() %}
-                  <li>
-                    {{ cardtag }}
-                  </li>
-                {% endfor %}
-                </td>
-              </tr>
-              <tr>
-                <td>Effekte</td>
-                <td>{{ card.getEffect() }}</td>
-              </tr>
+              {% if card.getType() %}
+                <tr>
+                  <td>Typ</td>
+                  <td>{{ card.getType() }}</td>
+                </tr>
+              {% endif %}
+              {% if card.getCost() %}
+                <tr>
+                  <td>Kosten</td>
+                  <td>{{ card.getCost() }}</td>
+                </tr>
+              {% endif %}
+              {% if card.getHp() %}
+                <tr>
+                  <td>HP</td>
+                  <td>{{ card.getHp() }}</td>
+                </tr>
+              {% endif %}
+              {% if card.getCardtag() %}
+                <tr>
+                  <td>Karstentypen</td>
+                  <td>
+                  {% for cardtag in card.getCardtag() %}
+                    <li>
+                      {{ cardtag }}
+                    </li>
+                  {% endfor %}
+                  </td>
+                </tr>
+              {% endif %}
+              {% if card.getEffect() %}
+                <tr>
+                  <td>Effekte</td>
+                  <td>{{ card.getEffect() }}</td>
+                </tr>
+              {% endif %}
           </table>
         </div>
       </div>

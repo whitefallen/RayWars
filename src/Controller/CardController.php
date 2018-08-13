@@ -71,11 +71,24 @@ class CardController extends AbstractController {
     $card = new Card();
     $card->setId($_data['id']);
     $card->setName($_data['name']);
-    $card->setType($_data['typ']);
-    $card->setCost($_data['kosten']);
-    $card->setHp($_data['hp']);
-    $card->setCardtag($_data['kartentypen']);
-    $card->setEffect($_data['effekte']);
+    if(!empty($_data['typ'])) {
+      $card->setType($_data['typ']);
+    }
+    if(!empty($_data['kosten'])) {
+      $card->setCost($_data['kosten']);
+    }
+    if(!empty($_data['hp'])) {
+      $card->setHp($_data['hp']);
+    }
+    if(!empty($_data['kartentypen'])) {
+      $card->setCardtag($_data['kartentypen']);
+    }
+    if(!empty($_data['effekte'])) {
+      $card->setEffect($_data['effekte']);
+    }
+    if(!empty($_data['infotext'])) {
+      $card->setInfotext($_data['infotext']);
+    }
     return $card;
   }
 }
