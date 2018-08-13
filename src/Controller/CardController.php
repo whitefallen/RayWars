@@ -25,9 +25,19 @@ class CardController extends AbstractController {
    * @Route("/cards/card/{card_id}", name="app_card_info")
    */
   public function showCardInfo($card_id) {
-    $card = $this->findFile($card_id);
+    $card = $this->findAFile($card_id);
     return $this->render('card/card.html.twig', array(
       'card' => $card
+    ));
+  }
+
+  /**
+   * @Route("/cards", name="app_card_list")
+   */
+  public function showCardList() {
+    $cards = $this->findAllFiles();
+    return $this->render('card/cardlist.html.twig', array(
+      'cards' => $cards
     ));
   }
 
@@ -38,7 +48,7 @@ class CardController extends AbstractController {
     return $this->render('card/card.html.twig');
   }
 
-  private function findFile($card_id) {
+  private function findAFile($card_id) {
     $finder = new Finder();
     $pathToCards = $this->__projectDir.'/cards/data';
     $data = $finder->files()->name('card'.$card_id.'.json')->in($pathToCards);
@@ -46,6 +56,18 @@ class CardController extends AbstractController {
         $data = json_decode($date->getContents(),true);
     }
     return $this->createCardObject($data);
+  }
+
+  private function findAllFiles() {
+    $finder = new Finder();
+    $cards = array();
+    $pathToCards = $this->__projectDir.'/cards/data';
+    $data = $finder->files()->name('card*.json')->in($pathToCards);
+    foreach($data as $date) {
+        $data = json_decode($date->getContents(),true);
+        $cards[$data['id']] = $this->createCardObject($data);
+    }
+    return $cards;
   }
 
   private function createCardObject($_data) {

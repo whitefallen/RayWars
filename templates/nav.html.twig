@@ -1,23 +1,20 @@
 {% block navcontent %}
 <nav class="navbar navbar-expand-md bg-secondary navbar-dark">
   <div class="container">
-    <a class="navbar-brand" href="#">Brand</a>
+    <a class="navbar-brand" href="#">RAYWARS</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="{{ path('app_index') }}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="{{ path('app_card_list') }}">Cards</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Contact us</a>
+          <a class="nav-link" href="{{ path('app_ruleset') }}">Ruleset</a>
         </li>
       </ul>
       <form class="form-inline m-0">
