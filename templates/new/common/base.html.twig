@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}RAYWARS!{% endblock %}</title>
+        {% block stylesheets %}
+          <!-- CSS  -->
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+          <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        {% endblock %}
+    </head>
+    <body>
+        <div id="splash">
+          <div class="container">
+            <div class="row center">
+              <div class="col l12 ">
+                <h1 class="white-text">LOADING RAYWARS!</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l3">
+
+              </div>
+              <div class="progress col l6 ">
+                <div class="indeterminate" >
+
+                </div>
+              </div>
+              <div class="col l3">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <header>
+          {% include 'new/common/nav.html.twig' %}
+        </header>
+        <main>
+          {% block content %}
+          {% endblock %}
+        </main>
+        <footer class="page-footer">
+          {% include 'new/common/footer.html.twig' %}
+        </footer>
+        {% block javascripts %}
+          <!--  Scripts-->
+          <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+          <script src="js/materialize.js"></script>
+          <script src="js/init.js"></script>
+        {% endblock %}
+    </body>
+</html>
