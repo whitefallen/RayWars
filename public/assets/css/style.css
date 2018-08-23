@@ -12,6 +12,10 @@
 }
 #app {
   display: none;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 #navbar_custom{
@@ -29,8 +33,45 @@ body {
 }
 
 footer {
-  bottom: 0;
-  position: fixed;
-  width: 100%;
   background-color: #4f70ce !important;
+}
+
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+main {
+   flex: 1 0 auto;
+}
+
+.card.small .card-image, .card.medium .card-image, .card.large .card-image {
+  max-height: 80%;
+}
+
+.card {
+  height: 600px;
+}
+
+#ruleset-header {
+  border-bottom: 0px solid;
+}
+
+#ruleset-header nav {
+  color: black ;
+  background-color: white;
+}
+
+#ruleset-header nav a {
+  color: black ;
+}
+
+#ruleset-header nav .breadcrumb:before {
+  color: black;
+}
+
+
+#navbar_custom .container .row {
+  margin-bottom: 0px;
 }

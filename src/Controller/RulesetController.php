@@ -22,4 +22,11 @@ class RulesetController extends AbstractController {
     return $this->render('ruleset/ruleset.html.twig');
   }
 
+  /**
+   * @Route("/new/ruleset", name="new_app_ruleset")
+   */
+  public function showNew() {
+    return $this->render('new/ruleset/ruleset.html.twig');
+  }
+
 }

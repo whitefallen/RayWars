@@ -8,9 +8,9 @@
             <div class="col l12">
               <a href="#" class="brand-logo">RAYWARS</a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Cards</a></li>
-                <li><a href="#">Ruleset</a></li>
+                <li {% if app.request.get('_route') == 'new_app_index' %} class="active" {% endif %}><a href="{{path('new_app_index')}}">Home</a></li>
+                <li {% if app.request.get('_route') == 'new_app_card_list' %} class="active" {% endif %}><a href="{{path('new_app_card_list')}}">Cards</a></li>
+                <li {% if app.request.get('_route') == 'new_app_ruleset' %} class="active" {% endif %}><a href="{{path('new_app_ruleset')}}">Ruleset</a></li>
               </ul>
             </div>
           </div>

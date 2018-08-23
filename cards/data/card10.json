@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "name": "Aaron Schälich",
+  "typ": "Main",
+  "kosten": 1,
+  "hp": 2,
+  "kartentypen": ["STUDENT", "DUISBURG", "TCG-SPIELER"],
+  "effekte": "TRIGGERED: Wenn eine Doggo-Karte gespielt wird, bekommt diese Karte +1 Stärke."
+}

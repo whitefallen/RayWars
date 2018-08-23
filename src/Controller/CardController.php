@@ -39,6 +39,26 @@ class CardController extends AbstractController {
   }
 
   /**
+   * @Route("/new/cards/card/{card_id}", name="new_app_card_info")
+   */
+  public function showNewCardInfo($card_id) {
+    $card = $this->findAFile($card_id);
+    return $this->render('new/card/card.html.twig', array(
+      'card' => $card
+    ));
+  }
+
+  /**
+   * @Route("/new/cards", name="new_app_card_list")
+   */
+  public function showNewCardList() {
+    $cards = $this->findAllFiles();
+    return $this->render('new/card/cardlist.html.twig', array(
+      'cards' => $cards
+    ));
+  }
+
+  /**
    * @Route("/cards/example" , name="app_card_example")
    */
   public function showExampleCardPage() {
