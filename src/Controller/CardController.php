@@ -33,6 +33,7 @@ class CardController extends AbstractController {
    */
   public function showNewCardList() {
     $cards = $this->findAllFiles();
+    asort($cards);
     return $this->render('new/card/cardlist.html.twig', array(
       'cards' => $cards
     ));
