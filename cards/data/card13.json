@@ -1,0 +1,10 @@
+{
+  "id": 13,
+  "name": "Hackenhammer",
+  "typ": "Meme",
+  "kosten": 1,
+  "effekte": ["Wähle eine Item-Karte aus deinem Hartz-Stapel und nimm sie auf die Hand"],
+  "infotext": "",
+  "trivia": [""],
+  "alternative_bilder": [1]
+}

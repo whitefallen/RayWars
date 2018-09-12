@@ -1,0 +1,12 @@
+{
+  "id": 15,
+  "name": "Charlie",
+  "typ": "Main",
+  "kosten": 4,
+  "hp": 4,
+  "kartentypen": ["DOGGO: \"René\"", "OBERHAUSEN"],
+  "effekte": ["HELO: Füge einem gegnerischen Charakter 4 Schaden zu"],
+  "infotext": "",
+  "trivia": [""],
+  "alternative_bilder": [1]
+}

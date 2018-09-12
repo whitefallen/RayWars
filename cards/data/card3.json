@@ -1,0 +1,12 @@
+{
+  "id": 3,
+  "name": "Hena Demirovic",
+  "typ": "Main",
+  "kosten": 5,
+  "hp": 4,
+  "kartentypen": ["STUDENTIN", "TRAP", "HAGEN"],
+  "effekte": ["TRIGGERED: Wenn eine Meme-Karte gespielt wird, bekommt diese Karte +1 Stärke"],
+  "infotext": "",
+  "trivia": ["Erst bei der Erstellung der json. Datein für die Webseite ist aufgefallen, dass Jonas und Hena einen ähnlichen Effekt haben. Ob einer der Entwickler das mit Absicht gemacht hat ist bis jetzt noch unklar."],
+  "alternative_bilder": [1]
+}

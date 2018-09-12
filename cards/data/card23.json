@@ -1,0 +1,12 @@
+{
+  "id": 23,
+  "name": "Yannik Borges",
+  "typ": "Main",
+  "kosten": 2,
+  "hp": 3,
+  "kartentypen": ["STUDENT", "RATINGEN", "TCG-SPIELER"],
+  "effekte": ["HELO: Wenn du 4 oder weniger Karten auf der Hand hast, nimm eine Item-Karte deiner Wahl von deinem Deck auf die Hand"],
+  "infotext": "",
+  "trivia": [""],
+  "alternative_bilder": [1,2]
+}

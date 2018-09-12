@@ -1,0 +1,12 @@
+{
+  "id": 6,
+  "name": "Bianca Vogt",
+  "typ": "Main",
+  "kosten": 4,
+  "hp": 2,
+  "kartentypen": ["STUDENTIN", "KÜKI", "DÜSSELDORF"],
+  "effekte": ["HELO: Ziehe 1 Karte", "TRIGGERED: Wenn dein Gegner eine Main-Karte spielt, ziehe 1 Karte"],
+  "infotext": "",
+  "trivia": ["Nur Bianca besitzt den Typ Küki"],
+  "alternative_bilder": [1]
+}

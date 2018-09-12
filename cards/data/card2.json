@@ -1,0 +1,12 @@
+{
+  "id": 2,
+  "name": "Jonas Baur",
+  "typ": "Main",
+  "kosten": 3,
+  "hp": 5,
+  "kartentypen": ["STUDENT", "KNITTKUHL", "TCG-SPIELER", "GOTT"],
+  "effekte": ["TRIGGERED: Wenn eine Main-Karte gespielt wird, verliert sie -1 Stärke"],
+  "infotext": "",
+  "trivia": ["Das Alternativ-Cover für diese Karte wurde aus purem Zufall wieder gefunden"],
+  "alternative_bilder": [1,2]
+}

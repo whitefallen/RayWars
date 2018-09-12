@@ -1,0 +1,12 @@
+{
+  "id": 8,
+  "name": "Fünfköpfiger Trap Drache",
+  "typ": "Main",
+  "kosten": 8,
+  "hp": 12,
+  "kartentypen": ["FIKTIV: 3 beliebige Trapkarten", "TRAP"],
+  "effekte": ["HELO: Zahle die Hälfte deiner CP. Zerstöre alle anderen Karten auf dem Feld"],
+  "infotext": "",
+  "trivia": [""],
+  "alternative_bilder": [1]
+}

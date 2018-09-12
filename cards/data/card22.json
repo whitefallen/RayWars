@@ -1,0 +1,12 @@
+{
+  "id": 22,
+  "name": "Lena Hoffmann",
+  "typ": "Main",
+  "kosten": 4,
+  "hp": 3,
+  "kartentypen": ["STUDENTIN", "TRAP", "REMSCHEID"],
+  "effekte": ["ENDLOSSCHLEIFE: Diese Karte hat +2 Stärke für jede gesetzte Fallenkarte"],
+  "infotext": "",
+  "trivia": ["Es gibt noch ein Alternativ Artwork"],
+  "alternative_bilder": [1]
+}

@@ -1,0 +1,12 @@
+{
+  "id": 19,
+  "name": "Nicola Becker",
+  "typ": "Main",
+  "kosten": 6,
+  "hp": 6,
+  "kartentypen": ["STUDENTIN", "REMSCHEID", "STREAMER-GIRLZ"],
+  "effekte": ["ENDLOSSCHLEIFE: Hat +1 Stärke für jedes ausgerüstete Item"],
+  "infotext": "",
+  "trivia": ["Als einer der Entwickler bei einem nachgefragt hat wie der Nachname war antwortete dieser relativ schnell. Als Begründung wurde folgendes angegeben: \" hatte facebook offen xD; und nicola's profil in meinen lesezeichen gespeichert; aber pscht\""],
+  "alternative_bilder": [1]
+}
