@@ -80,6 +80,7 @@
           </div>
         </div>
     </div>
+    {% if card.getTrivia() %}
     <div class="row" id="trivia">
       <div class="col l12">
         <h5>Trivia</h5>
@@ -90,6 +91,7 @@
         {% endfor %}
       </div>
     </div>
+    {% endif %}
   </div>
 </div>
 {% endblock %}

@@ -29,7 +29,7 @@ class CardController extends AbstractController {
   }
 
   /**
-   * @Route("/cards", name="new_app_card_list")
+   * @Route("/cardss", name="new_app_card_list")
    */
   public function showNewCardList() {
     $cards = $this->findAllFiles();
