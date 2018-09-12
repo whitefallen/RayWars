@@ -71,7 +71,6 @@ main {
   color: black;
 }
 
-
 #navbar_custom .container .row {
   margin-bottom: 0px;
 }
@@ -83,4 +82,12 @@ main {
 
 #app .container .carousel-img {
   margin-left: 16.5%;
+}
+
+#cardContainer .row li {
+  list-style-type: none;
+}
+
+#cardContainer .row#trivia {
+  margin-bottom: 5vw;
 }

@@ -2,7 +2,7 @@
 
 {% block content %}
 <div id="app">
-  <div class="container">
+  <div id="cardContainer" class="container">
       <div class="row">
         <div class="col l12">
           <h3>{{ card.getName() }}</h3>
@@ -44,7 +44,7 @@
               {% endif %}
               {% if card.getCardtag() %}
                 <tr>
-                  <td>Karstentypen</td>
+                  <td>Kartentypen</td>
                   <td>
                   {% for cardtag in card.getCardtag() %}
                     <li>
@@ -80,7 +80,7 @@
           </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="trivia">
       <div class="col l12">
         <h5>Trivia</h5>
         {% for trivia in card.getTrivia() %}
