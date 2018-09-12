@@ -20,6 +20,10 @@ class Card
 
     private $infotext;
 
+    private $trivia;
+
+    private $alternativeArtworks;
+
     public function getId()
     {
         return $this->id;
@@ -98,6 +102,26 @@ class Card
     public function setInfotext($_infotext)
     {
         $this->infotext = $_infotext;
+    }
+
+    public function getTrivia()
+    {
+        return $this->trivia;
+    }
+
+    public function setTrivia($_trivia)
+    {
+        $this->trivia = $_trivia;
+    }
+
+    public function getAlternativeArtworks()
+    {
+        return $this->alternativeArtworks;
+    }
+
+    public function setAlternativeArtworks($_artworks)
+    {
+        $this->alternativeArtworks = $_artworks;
     }
 
 }

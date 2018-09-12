@@ -75,3 +75,12 @@ main {
 #navbar_custom .container .row {
   margin-bottom: 0px;
 }
+
+#ruleset .breadcrumb::before {
+  content: '\203E';
+  margin: 3px 10px 0 8px;
+}
+
+#app .container .carousel-img {
+  margin-left: 16.5%;
+}

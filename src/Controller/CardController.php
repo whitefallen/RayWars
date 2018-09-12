@@ -109,6 +109,12 @@ class CardController extends AbstractController {
     if(!empty($_data['infotext'])) {
       $card->setInfotext($_data['infotext']);
     }
+    if(!empty($_data['trivia'])) {
+      $card->setTrivia($_data['trivia']);
+    }
+    if(!empty($_data['alternative_bilder'])) {
+      $card->setAlternativeArtworks($_data['alternative_bilder']);
+    }
     return $card;
   }
 }
