@@ -29,7 +29,7 @@ class CardController extends AbstractController {
   }
 
   /**
-   * @Route("/cardss", name="new_app_card_list")
+   * @Route("/cards", name="new_app_card_list")
    */
   public function showNewCardList() {
     $cards = $this->findAllFiles();
@@ -56,6 +56,7 @@ class CardController extends AbstractController {
     $data = $finder->files()->name('card*.json')->in($pathToCards);
     foreach($data as $date) {
         $data = json_decode($date->getContents(),true);
+        var_dump($data['id']);
         $cards[$data['id']] = $this->createCardObject($data);
     }
     return $cards;
