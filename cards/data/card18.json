@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 {
   "id": 18,
   "name": "Alexander Munschau",
@@ -10,17 +9,4 @@
   "infotext": "",
   "trivia": [""],
   "alternative_bilder": [1,2]
-=======
-{
-  "id": 18,
-  "name": "Alexander Munschau",
-  "typ": "Main",
-  "kosten": 5,
-  "hp": 3,
-  "kartentypen": ["STUDENT", "SOLINGEN", "TCG-SPIELER"],
-  "effekte": ["ENDLOSSCHLEIFE: Dein Gegner kann nur 1 Meme-Karte pro Zug spielen"],
-  "infotext": "",
-  "trivia": [""],
-  "alternative_bilder": [1,2]
->>>>>>> Stashed changes
 }

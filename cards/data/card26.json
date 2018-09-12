@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 {
   "id": 26,
   "name": "Bleach",
@@ -8,15 +7,4 @@
   "infotext": "",
   "trivia": [""],
   "alternative_bilder": [1]
-=======
-{
-  "id": 26,
-  "name": "Bleach",
-  "typ": "Item",
-  "kosten": 4,
-  "effekte": ["Die ausgerüstete Karte verliert am Ende jedes Zuges 2 Stärke"],
-  "infotext": "",
-  "trivia": [""],
-  "alternative_bilder": [1]
->>>>>>> Stashed changes
 }

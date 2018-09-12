@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 {
   "id": 21,
   "name": "Nicole Fleischmann",
@@ -10,17 +9,4 @@
   "infotext": "",
   "trivia": ["Das Entwicklerteam hat sich bei einigen Karten was gedacht, bei anderen wiederrum nicht"],
   "alternative_bilder": [1]
-=======
-{
-  "id": 21,
-  "name": "Nicole Fleischmann",
-  "typ": "Main",
-  "kosten": 6,
-  "hp": 9,
-  "kartentypen": ["STUDENTIN", "TRAP", "DUISBURG"],
-  "effekte": [""],
-  "infotext": "",
-  "trivia": ["Das Entwicklerteam hat sich bei einigen Karten was gedacht, bei anderen wiederrum nicht"],
-  "alternative_bilder": [1]
->>>>>>> Stashed changes
 }

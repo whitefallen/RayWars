@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 {
   "id": 5,
   "name": "Gras",
@@ -8,15 +7,4 @@
   "infotext": "",
   "trivia": ["Alex und Olivia wurden durch einen komplizierten Algorithmus ermittelt"],
   "alternative_bilder": [1]
-=======
-{
-  "id": 5,
-  "name": "Gras",
-  "typ": "Item",
-  "kosten": 4,
-  "effekte": ["Rüste nur 1 \"Alex\" oder \"Olivia\" aus. Die ausgerüstete Karte bekommt +2 Stärke und kann nicht durch Kampf zerstört werden"],
-  "infotext": "",
-  "trivia": ["Alex und Olivia wurden durch einen komplizierten Algorithmus ermittelt"],
-  "alternative_bilder": [1]
->>>>>>> Stashed changes
 }

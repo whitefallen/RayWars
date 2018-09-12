@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 {
   "id": 16,
   "name": "Henrik Kother",
@@ -10,17 +9,4 @@
   "infotext": "",
   "trivia": [""],
   "alternative_bilder": [1]
-=======
-{
-  "id": 16,
-  "name": "Henrik Kother",
-  "typ": "Main",
-  "kosten": 2,
-  "hp": 2,
-  "kartentypen": ["STUDENT", "DUISBURG"],
-  "effekte": ["HELO: Wenn du 7 oder mehr Ressourcen hast, bekommt diese Karte +3 Stärke","ENDLOSSCHLEIFE: Diese Karte kann deinen Gegner nicht direkt angreifen, aber kann sofort angreifen in dem Zug, in dem sie gespielt wurde"],
-  "infotext": "",
-  "trivia": [""],
-  "alternative_bilder": [1]
->>>>>>> Stashed changes
 }

@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 {
   "id": 12,
   "name": "Jan Paulsen",
@@ -10,17 +9,4 @@
   "infotext": "",
   "trivia": [""],
   "alternative_bilder": [1]
-=======
-{
-  "id": 12,
-  "name": "Jan Paulsen",
-  "typ": "Main",
-  "kosten": 4,
-  "hp": 3,
-  "kartentypen": ["STUDENT", "TÖNISVORST"],
-  "effekte": ["HELO: Alle Main Karten, die bereits auf dem Feld waren, bekommen -2 Stärke"],
-  "infotext": "",
-  "trivia": [""],
-  "alternative_bilder": [1]
->>>>>>> Stashed changes
 }

@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 {
   "id": 10,
   "name": "5Code Chan",
@@ -10,17 +9,4 @@
   "infotext": "",
   "trivia": ["Das Artwork gehört mit Abstand zu den besten im ersten Set. Sagt man sich jedenfalls"],
   "alternative_bilder": [1]
-=======
-{
-  "id": 10,
-  "name": "5Code Chan",
-  "typ": "Main",
-  "kosten": 1,
-  "hp": 6,
-  "kartentypen": ["FIKTIV: \"Lena\"", "WAIFU"],
-  "effekte": ["HELO: Gib allen anderen Waifu-Karten, die du kontrollierst, +2 Stärke und deinen anderen Main-Karten + 1 Stärke"],
-  "infotext": "",
-  "trivia": ["Das Artwork gehört mit Abstand zu den besten im ersten Set. Sagt man sich jedenfalls"],
-  "alternative_bilder": [1]
->>>>>>> Stashed changes
 }

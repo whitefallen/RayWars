@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 {
   "id": 24,
   "name": "Olivia Schönbild",
@@ -10,17 +9,4 @@
   "infotext": "",
   "trivia": ["Das Entwicklerteam hat sich bei einigen Karten was gedacht, bei anderen wiederrum nicht"],
   "alternative_bilder": [1,2]
-=======
-{
-  "id": 24,
-  "name": "Olivia Schönbild",
-  "typ": "Main",
-  "kosten": 5,
-  "hp": 4,
-  "kartentypen": ["STUDENTIN", "TRAP", "NEUSS"],
-  "effekte": ["ENDLOSSCHLEIFE: Wenn dein Gegner 4 oder mehr Karten in der Hand hat, erhält diese Karte +2 Stärke und jeglicher Kampfschaden, den du oder diese Karte erhalten würdet, wird zu 0"],
-  "infotext": "",
-  "trivia": ["Das Entwicklerteam hat sich bei einigen Karten was gedacht, bei anderen wiederrum nicht"],
-  "alternative_bilder": [1,2]
->>>>>>> Stashed changes
 }

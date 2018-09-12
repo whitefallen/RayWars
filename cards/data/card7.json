@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 {
   "id": 7,
   "name": "Fortnite Amiibo",
@@ -8,15 +7,4 @@
   "infotext": "",
   "trivia": ["Ob Nintendo die Idee irgendwann mal umsetzt ist zum Zeitpunkt der Erstellung nicht bekannt"],
   "alternative_bilder": [1]
-=======
-{
-  "id": 7,
-  "name": "Fortnite Amiibo",
-  "typ": "Item",
-  "kosten": 5,
-  "effekte": ["Jedesmal, wenn die ausgerüstete Karte angreift oder angegriffen wird, bekommst du 1 Ressource pro gegnerischer Main-Karte hinzu"],
-  "infotext": "",
-  "trivia": ["Ob Nintendo die Idee irgendwann mal umsetzt ist zum Zeitpunkt der Erstellung nicht bekannt"],
-  "alternative_bilder": [1]
->>>>>>> Stashed changes
 }
