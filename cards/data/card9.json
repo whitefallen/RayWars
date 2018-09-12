@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "id": 9,
   "name": "Microsoft 2DS XL",
@@ -7,4 +8,15 @@
   "infotext": "",
   "trivia": [""],
   "alternative_bilder": [1]
+=======
+{
+  "id": 9,
+  "name": "Microsoft 2DS XL",
+  "typ": "Item",
+  "kosten": 0,
+  "effekte": ["Gib der ausgerüsteten Karte +1 Stärke und eine Extraportion Coolness!"],
+  "infotext": "",
+  "trivia": [""],
+  "alternative_bilder": [1]
+>>>>>>> Stashed changes
 }

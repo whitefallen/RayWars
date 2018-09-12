@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "id": 1,
   "name": "Vino",
@@ -9,4 +10,17 @@
   "infotext": "",
   "trivia": ["Als wir das Artwork angefordert haben, haben Yannik und Lena beide unabhängig voneinander ein Bild geschickt, wo ihr Doggo im Grünen zu sehen ist"],
   "alternative_bilder": [1]
+=======
+{
+  "id": 1,
+  "name": "Vino",
+  "typ": "Main",
+  "kosten": 5,
+  "hp": 5,
+  "kartentypen": ["DOGGO: \"Lena\"", "REMSCHEID"],
+  "effekte": ["ENDLOSSCHLEIFE: Kann nicht für Effekte und Angriffe als Ziel gewählt werden"],
+  "infotext": "",
+  "trivia": ["Als wir das Artwork angefordert haben, haben Yannik und Lena beide unabhängig voneinander ein Bild geschickt, wo ihr Doggo im Grünen zu sehen ist"],
+  "alternative_bilder": [1]
+>>>>>>> Stashed changes
 }

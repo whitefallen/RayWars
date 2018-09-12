@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "id": 14,
   "name": "Buddy",
@@ -9,4 +10,17 @@
   "infotext": "",
   "trivia": ["Als wir das Artwork angefordert haben, haben Yannik und Lena beide unabhängig voneinander ein Bild geschickt, wo ihr Doggo im Grünen zu sehen ist"],
   "alternative_bilder": [1]
+=======
+{
+  "id": 14,
+  "name": "Buddy",
+  "typ": "Main",
+  "kosten": 5,
+  "hp": 5,
+  "kartentypen": ["DOGGO: \"Yannik\"", "RATINGEN"],
+  "effekte": ["HELO: Deine Main-Karten bekommen +1 Stärke bis zum Ende des Zuges","TRIGGERED: Erhöhe deine CP um 2 zu Beginn jedes Zuges","ENDLOSSCHLEIFE: Der Besitzer dieses Doggos hat +2 Stärke"],
+  "infotext": "",
+  "trivia": ["Als wir das Artwork angefordert haben, haben Yannik und Lena beide unabhängig voneinander ein Bild geschickt, wo ihr Doggo im Grünen zu sehen ist"],
+  "alternative_bilder": [1]
+>>>>>>> Stashed changes
 }

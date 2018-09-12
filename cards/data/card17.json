@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "id": 17,
   "name": "Larissa Vollmar",
@@ -9,4 +10,17 @@
   "infotext": "",
   "trivia": [""],
   "alternative_bilder": [1]
+=======
+{
+  "id": 17,
+  "name": "Larissa Vollmar",
+  "typ": "Main",
+  "kosten": 6,
+  "hp": 6,
+  "kartentypen": ["STUDENTIN", "TRAP", "DÜSSELDORF"],
+  "effekte": ["HELO: Lege alle anderen Main-Karten mit 6 oder weniger Stärke auf den Hartz-Stapel","TRIGGERED: Wenn eine Karte gespielt wird, die 6 kostet, ziehe eine Karte","BYE: Verringere deine CP um 6"],
+  "infotext": "",
+  "trivia": [""],
+  "alternative_bilder": [1]
+>>>>>>> Stashed changes
 }

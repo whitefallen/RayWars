@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "id": 11,
   "name": "Absinth",
@@ -7,4 +8,15 @@
   "infotext": "",
   "trivia": [""],
   "alternative_bilder": [1]
+=======
+{
+  "id": 11,
+  "name": "Absinth",
+  "typ": "Item",
+  "kosten": 3,
+  "effekte": ["Die ausgerüstete Karte bekommt + 3 Stärke, aber der Gegner bestimmt die Ziele von Angriffen mit dieser Karte"],
+  "infotext": "",
+  "trivia": [""],
+  "alternative_bilder": [1]
+>>>>>>> Stashed changes
 }

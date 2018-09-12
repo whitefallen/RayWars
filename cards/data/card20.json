@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "id": 20,
   "name": "Aaron Schälich",
@@ -9,4 +10,17 @@
   "infotext": "",
   "trivia": [""],
   "alternative_bilder": [1]
+=======
+{
+  "id": 20,
+  "name": "Aaron Schälich",
+  "typ": "Main",
+  "kosten": 1,
+  "hp": 2,
+  "kartentypen": ["STUDENT", "DUISBURG", "TCG-SPIELER"],
+  "effekte": ["TRIGGERED: Wenn eine Doggo-Karte gespielt wird, bekommt diese Karte +1 Stärke"],
+  "infotext": "",
+  "trivia": [""],
+  "alternative_bilder": [1]
+>>>>>>> Stashed changes
 }

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "id": 25,
   "name": "Mathe1 Front",
@@ -7,4 +8,15 @@
   "infotext": "",
   "trivia": [""],
   "alternative_bilder": [1]
+=======
+{
+  "id": 25,
+  "name": "Mathe1 Front",
+  "typ": "Meme",
+  "kosten": 5,
+  "effekte": ["Wähle 1 Main-Karte auf deinem Feld. Die gewählte Karte kann in diesem Zug jede Main-Karte deines Gegners angreifen, ohne Schaden zu erleiden, aber nicht deinen Gegner. Lege die gewählte Karte am Ende des nächsten Zuges auf den Hartz-Stapel"],
+  "infotext": "",
+  "trivia": [""],
+  "alternative_bilder": [1]
+>>>>>>> Stashed changes
 }
