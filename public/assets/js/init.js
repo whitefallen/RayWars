@@ -5,4 +5,4 @@ setTimeout(function(){
       fullWidth: false,
       indicators: true
     });
-}, 3000);
+}, 1500);
