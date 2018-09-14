@@ -91,3 +91,7 @@ main {
 #cardContainer .row#trivia {
   margin-bottom: 5vw;
 }
+
+.sidenav-overlay {
+  z-index: 10;
+}
