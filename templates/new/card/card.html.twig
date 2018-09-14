@@ -4,7 +4,7 @@
 <div id="app">
   <div id="cardContainer" class="container">
       <div class="row">
-        <div class="col l12">
+        <div class="col l12 s12">
           <h3>{{ card.getName() }}</h3>
           <p>
             {% if card.getInfotext() %}
@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col l8">
+        <div class="col l8 s8">
           <table class="table">
               <tr>
                 <td>#</td>
@@ -69,12 +69,12 @@
           </table>
         </div>
 
-        <div class="col l4">
+        <div class="col l4 s4">
           {#<img class="responsive-img col l8" src="/cards/image/card{{card.getId}}.png">#}
-          <div class="carousel carousel-slider col l8">
+          <div class="carousel carousel-slider col l8 s8">
             {% for image in card.getAlternativeArtworks() %}
               <div class="carousel-item" href="#{{image}}">
-                <img class="responsive-img col l12" src="/cards/image/card{{card.getId}}_{{image}}.png">
+                <img class="responsive-img col l12 s12" src="/cards/image/card{{card.getId}}_{{image}}.png">
               </div>
             {% endfor %}
           </div>
@@ -82,7 +82,7 @@
     </div>
     {% if card.getTrivia() %}
     <div class="row" id="trivia">
-      <div class="col l12">
+      <div class="col l12 s12">
         <h5>Trivia</h5>
         {% for trivia in card.getTrivia() %}
           <li>
