@@ -95,3 +95,7 @@ main {
 .sidenav-overlay {
   z-index: 10;
 }
+
+#side-menue.sidenav {
+  width: auto;
+}
