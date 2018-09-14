@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col l8 s8">
+        <div class="col l8 s6">
           <table class="table">
               <tr>
                 <td>#</td>
@@ -69,9 +69,9 @@
           </table>
         </div>
 
-        <div class="col l4 s4">
+        <div class="col l4 s6">
           {#<img class="responsive-img col l8" src="/cards/image/card{{card.getId}}.png">#}
-          <div class="carousel carousel-slider col l8 s8">
+          <div class="carousel carousel-slider col l8 s12">
             {% for image in card.getAlternativeArtworks() %}
               <div class="carousel-item" href="#{{image}}">
                 <img class="responsive-img col l12 s12" src="/cards/image/card{{card.getId}}_{{image}}.png">
