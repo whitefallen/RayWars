@@ -54,6 +54,10 @@ main {
   height: 600px;
 }
 
+#cardContainer .hide-on-large-only .carousel {
+  height: 460px;
+}
+
 #ruleset-header {
   border-bottom: 0px solid;
 }

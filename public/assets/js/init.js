@@ -4,6 +4,10 @@ setTimeout(function(){
     $('.carousel.carousel-slider').carousel({
       fullWidth: false,
       indicators: true
-    });
-    $('.sidenav').sidenav();
+    });    
 }, 1500);
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems, null);
+});
