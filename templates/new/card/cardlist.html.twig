@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       {% for card in cards %}
-      <div class="col l3 s6">
+      <div class="col l3 s12">
         <div class="card hoverable">
           <div class="card-image waves-effect waves-block waves-light">
             <a href="{{ path('new_app_card_info', {'card_id': card.getId()}) }}"><img class="responsive-img" src="/cards/image/card{{card.getId}}_1.png"></a>
