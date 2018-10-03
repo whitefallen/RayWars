@@ -1,10 +1,8 @@
 # Repository der Legendäre Raywars Seite.
-----------------
 zu finden unter https://raywars.ray-lab.de/ 
 
 
 # Changelog
-----------
 ## [1.0.0] - 2018-10-03
 ### Added
 - New List for the Type attribute.
