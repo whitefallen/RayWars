@@ -42,7 +42,7 @@
                   <td>{{ card.getHp() }}</td>
                 </tr>
               {% endif %}
-              {% if card.getCardtag()[0] is not empty %}
+              {% if card.getCardtag() is not null and card.getCardtag()[0] is not empty %}
                 <tr>
                   <td>Kartentypen</td>
                   <td>
@@ -54,7 +54,7 @@
                   </td>
                 </tr>
               {% endif %}
-              {% if card.getEffect()[0] is not empty %}
+              {% if card.getEffect() is not null and card.getEffect()[0] is not empty %}
                 <tr>
                   <td>Effekte</td>
                   <td>
@@ -68,7 +68,7 @@
               {% endif %}
           </table>
         </div>
-        {% if card.getAlternativeArtworks()[0] is not empty %}
+        {% if card.getAlternativeArtworks() is not null and card.getAlternativeArtworks()[0] is not empty %}
         <div class="col l4 hide-on-med-and-down">
           {#<img class="responsive-img col l8" src="/cards/image/card{{card.getId}}.png">#}
           <div class="carousel carousel-slider col l8 s12">
@@ -81,7 +81,7 @@
         </div>
         {% endif %}
     </div>
-    {% if card.getAlternativeArtworks()[0] is not empty %}
+    {% if card.getAlternativeArtworks() is not null and card.getAlternativeArtworks()[0] is not empty %}
     <div class="row hide-on-large-only">
       <div class="col s12">
         {#<img class="responsive-img col l8" src="/cards/image/card{{card.getId}}.png">#}
@@ -96,7 +96,7 @@
     </div>
     {% endif %}
 
-    {% if card.getTrivia()[0] is not empty %}
+    {% if card.getCardtag is not null and card.getTrivia()[0] is not empty %}
     <div class="row" id="trivia">
       <div class="col l12 s12">
         <h5>Trivia</h5>
