@@ -8,6 +8,7 @@ setTimeout(function(){
 }, 1500);
 
 document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems, null);
+  var sidenavele = document.querySelectorAll('.sidenav');
+  var instancesNav = M.Sidenav.init(sidenavele, null);
 });
+

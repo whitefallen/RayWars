@@ -1,4 +1,4 @@
-{% extends 'new/common/base.html.twig' %}
+{% extends 'common/base.html.twig' %}
 
 {% block content %}
 <div id="app">
@@ -18,8 +18,8 @@
       <div class="row">
         <div class="col l12">
           <a href="#" class="waves-effect waves-light btn-large"><i class="material-icons right">file_download</i>Download</a>
-          <a href="{{ path('new_app_card_list') }}" class="waves-effect waves-light btn-large"><i class="material-icons right">photo_library</i>View Cards</a>
-          <a href="{{ path('new_app_ruleset') }}" class="waves-effect waves-light btn-large"><i class="material-icons right">book</i>Read Rules</a>
+          <a href="{{ path('app_card_list') }}" class="waves-effect waves-light btn-large"><i class="material-icons right">photo_library</i>View Cards</a>
+          <a href="{{ path('app_ruleset') }}" class="waves-effect waves-light btn-large"><i class="material-icons right">book</i>Read Rules</a>
         </div>
       </div>
     </div>
@@ -32,12 +32,12 @@
       </div>
       <div class="row">
         <div class="col s12">
-          <a href="{{ path('new_app_card_list') }}" class="waves-effect waves-light btn-large"><i class="material-icons right">photo_library</i>View Cards</a>
+          <a href="{{ path('app_card_list') }}" class="waves-effect waves-light btn-large"><i class="material-icons right">photo_library</i>View Cards</a>
         </div>
       </div>
       <div class="row">
         <div class="col s12">
-          <a href="{{ path('new_app_ruleset') }}" class="waves-effect waves-light btn-large"><i class="material-icons right">book</i>Read Rules</a>
+          <a href="{{ path('app_ruleset') }}" class="waves-effect waves-light btn-large"><i class="material-icons right">book</i>Read Rules</a>
         </div>
       </div>
     </div>

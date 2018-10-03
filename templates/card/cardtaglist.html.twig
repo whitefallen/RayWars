@@ -1,0 +1,30 @@
+{% extends 'common/base.html.twig' %}
+
+{% block content %}
+<div id="app">
+  <div class="container">
+    <div class="row">
+      <div class="col l12 s12">
+        <h1>{{slug | upper}} - {{slugcontent | upper}}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col l16 s6">
+        <ul>
+          {% for card in cards %}
+            {% if slug is same as("typ") %}
+              {% if card.getType() == slugcontent %}
+                <li><a onmouseover="toggleImageOnHover(this)" data-imageId="{{card.getId()}}" href="{{ path('app_card_info', {'card_id': card.getId()}) }}"> - {{card.getName()}}</a></li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col l6 s6">
+        <img id="imageBox" class="col l6 s6">
+      </div>
+    </div>
+    
+  </div>
+</div>
+{% endblock %}

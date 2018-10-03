@@ -1,4 +1,4 @@
-{% extends 'new/common/base.html.twig' %}
+{% extends 'common/base.html.twig' %}
 
 {% block content %}
 <div id="app">
@@ -8,11 +8,11 @@
       <div class="col l3 s12">
         <div class="card hoverable">
           <div class="card-image waves-effect waves-block waves-light">
-            <a href="{{ path('new_app_card_info', {'card_id': card.getId()}) }}"><img class="responsive-img" src="/cards/image/card{{card.getId}}_1.png"></a>
+            <a href="{{ path('app_card_info', {'card_id': card.getId()}) }}"><img class="responsive-img" src="/cards/image/card{{card.getId}}_1.png"></a>
           </div>
           <div class="card-content hide-on-med-and-down">
             <span class="card-title grey-text text-darken-4">{{card.getName()}}</span>
-            <p><a href="{{ path('new_app_card_info', {'card_id': card.getId()}) }}">#{{card.getId()}} - {{card.getName()}} </a></p>
+            <p><a href="{{ path('app_card_info', {'card_id': card.getId()}) }}">#{{card.getId()}} - {{card.getName()}} </a></p>
           </div>
         </div>
       </div>

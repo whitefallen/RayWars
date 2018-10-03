@@ -16,10 +16,10 @@ class IndexController extends AbstractController {
   }
 
   /**
-   * @Route("/", name="new_app_index")
+   * @Route("/", name="app_index")
    */
   public function showTest() {
-    return $this->render('new/index/index.html.twig');
+    return $this->render('index/index.html.twig');
   }
 
 }

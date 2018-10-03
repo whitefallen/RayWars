@@ -1,0 +1,30 @@
+{% block navcontent %}
+<div class="navbar-fixed">
+  <div id="navbar_custom">
+    <nav>
+      <div class="nav-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col l12 s12">
+              <a href="#" data-target="side-menue" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+              </a>
+              <a href="{{path('app_index')}}" class="brand-logo">RAYWARS</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li {% if app.request.get('_route') == 'app_index' %} class="active" {% endif %}><a href="{{path('app_index')}}">Home</a></li>
+                <li {% if app.request.get('_route') == 'app_card_list' %} class="active" {% endif %}><a href="{{path('app_card_list')}}">Cards</a></li>
+                <li {% if app.request.get('_route') == 'app_ruleset' %} class="active" {% endif %}><a href="{{path('app_ruleset')}}">Ruleset</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <ul class="sidenav" id="side-menue">
+      <li><a href="{{path('app_index')}}">Home</a></li>
+      <li><a href="{{path('app_card_list')}}">Cards</a></li>
+      <li><a href="{{path('app_ruleset')}}">Ruleset</a></li>
+    </ul>
+  </div>
+</div>
+{% endblock %}

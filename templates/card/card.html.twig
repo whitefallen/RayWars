@@ -1,4 +1,4 @@
-{% extends 'new/common/base.html.twig' %}
+{% extends 'common/base.html.twig' %}
 
 {% block content %}
 <div id="app">
@@ -27,7 +27,7 @@
               {% if card.getType() %}
                 <tr>
                   <td>Typ</td>
-                  <td>{{ card.getType() }}</td>
+                  <td><a href="{{ path('app_card_taglist', {'slug': 'typ', 'slugcontent': card.getType() }) }}">{{ card.getType() }}</a></td>
                 </tr>
               {% endif %}
               {% if card.getCost() %}
@@ -48,7 +48,7 @@
                   <td>
                   {% for cardtag in card.getCardtag() %}
                     <li>
-                      {{ cardtag }}
+                      <a>{{ cardtag }}</a>
                     </li>
                   {% endfor %}
                   </td>
@@ -74,7 +74,7 @@
           <div class="carousel carousel-slider col l8 s12">
             {% for image in card.getAlternativeArtworks() %}
               <div class="carousel-item" href="#{{image}}">
-                <img class="responsive-img col l12 s12" src="/cards/image/card{{card.getId}}_{{image}}.png">
+                <img class="responsive-img col l12 s12 materialboxed" src="/cards/image/card{{card.getId}}_{{image}}.png">
               </div>
             {% endfor %}
           </div>
