@@ -116,3 +116,14 @@ main {
 #ruleset-header nav {
   border-bottom: 1px solid black;
 }
+
+#app .rulescontent a {
+  display:block;
+  position: relative;
+  top: -150px;
+  visibility: hidden;
+}
+
+#app .rulescontent .section {
+  word-wrap: break-word;
+}
