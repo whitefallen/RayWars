@@ -103,3 +103,16 @@ main {
 #side-menue.sidenav {
   width: auto;
 }
+
+#ruleset-header div.rules a.breadcrumb {
+  display: inline-block;
+  width: auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+#ruleset-header nav {
+  border-bottom: 1px solid black;
+}
