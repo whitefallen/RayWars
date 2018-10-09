@@ -19,7 +19,8 @@
             {% endif %}
             {% if slug is same as('cardtag') %}
               {% for tag in card.getCardTag() %}
-                {% if tag == slugcontent %}
+                {% set tagparts = tag|split(':') %}
+                {% if tagparts[0] == slugcontent %}
                   <li><a onmouseover="toggleImageOnHover(this)" data-imageId="{{card.getId()}}" href="{{ path('app_card_info', {'card_id': card.getId()}) }}"> - {{card.getName()}}</a></li>
                 {% endif %}
               {% endfor %}

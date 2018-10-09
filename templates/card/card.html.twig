@@ -47,8 +47,9 @@
                   <td>Kartentypen</td>
                   <td>
                   {% for cardtag in card.getCardtag() %}
+                  {% set cardparts = cardtag|split(':') %}
                     <li>
-                      <a href="{{ path('app_card_taglist', {'slug': 'cardtag', 'slugcontent': cardtag }) }}">{{ cardtag }}</a>
+                      <a href="{{ path('app_card_taglist', {'slug': 'cardtag', 'slugcontent': cardparts[0] }) }}">{{ cardtag }}</a>
                     </li>
                   {% endfor %}
                   </td>
