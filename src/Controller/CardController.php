@@ -54,4 +54,5 @@ class CardController extends AbstractController {
       'slugcontent' => $slugcontent
     ));
   }
+
 }

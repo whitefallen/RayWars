@@ -127,3 +127,10 @@ main {
 #app .rulescontent .section {
   word-wrap: break-word;
 }
+
+textarea {
+  outline: none;
+  border: 1px solid black;
+  min-height: 20%;
+  height: 20%;
+}

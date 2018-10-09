@@ -48,7 +48,7 @@
                   <td>
                   {% for cardtag in card.getCardtag() %}
                     <li>
-                      <a>{{ cardtag }}</a>
+                      <a href="{{ path('app_card_taglist', {'slug': 'cardtag', 'slugcontent': cardtag }) }}">{{ cardtag }}</a>
                     </li>
                   {% endfor %}
                   </td>
