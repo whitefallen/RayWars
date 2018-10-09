@@ -10,5 +10,6 @@ setTimeout(function(){
 document.addEventListener('DOMContentLoaded', function() {
   var sidenavele = document.querySelectorAll('.sidenav');
   var instancesNav = M.Sidenav.init(sidenavele, null);
+  var toolTipElems = document.querySelectorAll('.tooltipped');
+  var instancesTooltip = M.Tooltip.init(toolTipElems, null);
 });
-

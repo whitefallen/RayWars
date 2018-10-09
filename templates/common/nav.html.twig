@@ -14,6 +14,7 @@
                 <li {% if app.request.get('_route') == 'app_index' %} class="active" {% endif %}><a href="{{path('app_index')}}">Home</a></li>
                 <li {% if app.request.get('_route') == 'app_card_list' %} class="active" {% endif %}><a href="{{path('app_card_list')}}">Cards</a></li>
                 <li {% if app.request.get('_route') == 'app_ruleset' %} class="active" {% endif %}><a href="{{path('app_ruleset')}}">Ruleset</a></li>
+                <li {% if app.request.get('_route') == 'app_contact' %} class="active" {% endif %}><a href="{{path('app_contact')}}">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -24,6 +25,7 @@
       <li><a href="{{path('app_index')}}">Home</a></li>
       <li><a href="{{path('app_card_list')}}">Cards</a></li>
       <li><a href="{{path('app_ruleset')}}">Ruleset</a></li>
+      <li><a href="{{path('app_contact')}}">Contact</a></li>
     </ul>
   </div>
 </div>

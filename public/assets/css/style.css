@@ -51,7 +51,7 @@ main {
 }
 
 .card {
-  height: 600px;
+  border-radius: 20px;
 }
 
 #cardContainer .hide-on-large-only .carousel {
