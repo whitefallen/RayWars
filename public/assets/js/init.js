@@ -1,15 +1,14 @@
-setTimeout(function(){
-    document.getElementById('app').style['display'] = 'block';
+document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('splash').style['display'] = 'none';
     $('.carousel.carousel-slider').carousel({
-      fullWidth: false,
-      indicators: true
-    });    
-}, 1500);
+        fullWidth: false,
+        indicators: true
+    });
 
-document.addEventListener('DOMContentLoaded', function() {
-  var sidenavele = document.querySelectorAll('.sidenav');
-  var instancesNav = M.Sidenav.init(sidenavele, null);
-  var toolTipElems = document.querySelectorAll('.tooltipped');
-  var instancesTooltip = M.Tooltip.init(toolTipElems, null);
+    var sidenavele = document.querySelectorAll('.sidenav');
+    var instancesNav = M.Sidenav.init(sidenavele, null);
+    var toolTipElems = document.querySelectorAll('.tooltipped');
+    var instancesTooltip = M.Tooltip.init(toolTipElems, null);
 });
+
+document.getElementById('app').style['display'] = 'block';
