@@ -132,7 +132,7 @@ textarea {
   outline: none;
   border: 1px solid black;
   min-height: 20%;
-  height: 20%;
+  height: 20%; 
 }
 
 #app #cardContainer.container table tr td:first-child{
