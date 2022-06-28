@@ -7043,12 +7043,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     var input_selector = 'input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=search], input[type=date], input[type=time], textarea';
 
     // Add active if form auto complete
-    $(document).on('change', input_selector, function () {
-      if (this.value.length !== 0 || $(this).attr('placeholder') !== null) {
-        $(this).siblings('label').addClass('active');
-      }
-      M.validate_field($(this));
-    });
+    $(document).on('change', input_selector);
 
     // Add active if input element has been pre-populated on document ready
     $(document).ready(function () {
@@ -7057,25 +7052,25 @@ $jscomp.polyfill = function (e, r, p, m) {
 
     // HTML DOM FORM RESET handling
     $(document).on('reset', function (e) {
-      var formReset = $(e.target);
-      if (formReset.is('form')) {
+        var formReset = $(e.target);
+        if (formReset.is('form')) {
         formReset.find(input_selector).removeClass('valid').removeClass('invalid');
         formReset.find(input_selector).each(function (e) {
-          if (this.value.length) {
-            $(this).siblings('label').removeClass('active');
-          }
+            if (this.value.length) {
+                $(this).siblings('label').removeClass('active');
+            }
         });
 
         // Reset select (after native reset)
         setTimeout(function () {
-          formReset.find('select').each(function () {
-            // check if initialized
-            if (this.M_FormSelect) {
-              $(this).trigger('change');
-            }
-          });
+            formReset.find('select').each(function () {
+                // check if initialized
+                if (this.M_FormSelect) {
+                    $(this).trigger('change');
+                }
+            });
         }, 0);
-      }
+        }
     });
 
     /**
@@ -7107,17 +7102,7 @@ $jscomp.polyfill = function (e, r, p, m) {
 
     // Radio and Checkbox focus class
     var radio_checkbox = 'input[type=radio], input[type=checkbox]';
-    $(document).on('keyup', radio_checkbox, function (e) {
-      // TAB, check if tabbing to radio or checkbox.
-      if (e.which === M.keys.TAB) {
-        $(this).addClass('tabbed');
-        var $this = $(this);
-        $this.one('blur', function (e) {
-          $(this).removeClass('tabbed');
-        });
-        return;
-      }
-    });
+    $(document).on('keyup', radio_checkbox);
 
     var text_area_selector = '.materialize-textarea';
     $(text_area_selector).each(function () {
@@ -7131,25 +7116,11 @@ $jscomp.polyfill = function (e, r, p, m) {
       M.textareaAutoResize($textarea);
     });
 
-    $(document).on('keyup', text_area_selector, function () {
-      M.textareaAutoResize($(this));
-    });
-    $(document).on('keydown', text_area_selector, function () {
-      M.textareaAutoResize($(this));
-    });
+    $(document).on('keyup', text_area_selector);
+    $(document).on('keydown', text_area_selector);
 
     // File Input Path
-    $(document).on('change', '.file-field input[type="file"]', function () {
-      var file_field = $(this).closest('.file-field');
-      var path_input = file_field.find('input.file-path');
-      var files = $(this)[0].files;
-      var file_names = [];
-      for (var i = 0; i < files.length; i++) {
-        file_names.push(files[i].name);
-      }
-      path_input[0].value = file_names.join(', ');
-      path_input.trigger('change');
-    });
+    $(document).on('change', '.file-field input[type="file"]');
   }); // End of $(document).ready
 })(cash);
 ;(function ($, anim) {
@@ -7567,38 +7538,7 @@ $jscomp.polyfill = function (e, r, p, m) {
   }
 })(cash, M.anime);
 ;(function ($, anim) {
-  $(document).on('click', '.card', function (e) {
-    if ($(this).children('.card-reveal').length) {
-      var $card = $(e.target).closest('.card');
-      if ($card.data('initialOverflow') === undefined) {
-        $card.data('initialOverflow', $card.css('overflow') === undefined ? '' : $card.css('overflow'));
-      }
-      var $cardReveal = $(this).find('.card-reveal');
-      if ($(e.target).is($('.card-reveal .card-title')) || $(e.target).is($('.card-reveal .card-title i'))) {
-        // Make Reveal animate down and display none
-        anim({
-          targets: $cardReveal[0],
-          translateY: 0,
-          duration: 225,
-          easing: 'easeInOutQuad',
-          complete: function (anim) {
-            var el = anim.animatables[0].target;
-            $(el).css({ display: 'none' });
-            $card.css('overflow', $card.data('initialOverflow'));
-          }
-        });
-      } else if ($(e.target).is($('.card .activator')) || $(e.target).is($('.card .activator i'))) {
-        $card.css('overflow', 'hidden');
-        $cardReveal.css({ display: 'block' });
-        anim({
-          targets: $cardReveal[0],
-          translateY: '-100%',
-          duration: 300,
-          easing: 'easeInOutQuad'
-        });
-      }
-    }
-  });
+  $(document).on('click', '.card');
 })(cash, M.anime);
 ;(function ($) {
   'use strict';
@@ -8145,13 +8085,7 @@ $jscomp.polyfill = function (e, r, p, m) {
 
   $(document).ready(function () {
     // Handle removal of static chips.
-    $(document.body).on('click', '.chip .close', function () {
-      var $chips = $(this).closest('.chips');
-      if ($chips.length && $chips[0].M_Chips) {
-        return;
-      }
-      $(this).closest('.chip').remove();
-    });
+    $(document.body).on('click', '.chip .close');
   });
 })(cash);
 ;(function ($) {
